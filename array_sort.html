@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>array sort</title>
+</head>
+<body>
+
+	<p id="aditi"></p>
+	<p id="aditi2"></p>
+	<p id="aditi3"></p>
+	<p id="aditi4"></p>
+	<p id="aditi5"></p>
+	<p id="aditi6"></p>
+
+	<script type="text/javascript">
+
+		const fruits = ["Banana", "Orange", "Apple", "Mango"];
+	let size = fruits.length;
+		
+		document.getElementById("aditi").innerHTML="array fruits :" + fruits;
+		document.getElementById("aditi2").innerHTML="array sort :" + fruits.sort();
+		document.getElementById("aditi3").innerHTML="array reverse :" + fruits.reverse();
+
+		const points = [40, 100, 1, 5, 25, 10];
+        points.sort(function(a, b){return a-b});
+		document.getElementById("aditi4").innerHTML="array sort :" + points[0];
+        points.sort(function(a, b){return b-a});
+
+		document.getElementById("aditi5").innerHTML="array sort :" + points[0];
+    
+
+	</script>
+
+</body>
+</html>

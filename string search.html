@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>string search</title>
+</head>
+<body>
+
+	<p id="aditi"></p>
+	<p id="aditi2"></p>
+	<p id="aditi3"></p>
+	<p id="aditi4"></p>
+	<p id="aditi5"></p>
+	<p id="aditi6"></p>
+	<p id="aditi7"></p>
+	<p id="aditi8"></p>
+	<p id="aditi9"></p>
+	<p id="aditi10"></p>
+	<p id="aditi11"></p>
+	<p id="aditi12"></p>
+	<p id="aditi13"></p>
+	<p id="aditi14"></p>
+
+
+	<script type="text/javascript">
+
+		
+		let a="I am a cat, I am a cat.";
+		let b=a.indexOf("cat");
+		
+		document.getElementById("aditi").innerHTML="String a :" + a;
+		document.getElementById("aditi2").innerHTML="Index of cat in string a : " + b;
+		b=a.lastIndexOf("cat");
+		document.getElementById("aditi3").innerHTML="Last index of cat in string a : " + b;
+		b=a.search("cat");
+		document.getElementById("aditi4").innerHTML="search for cat in string a : " + b;
+			b=a.match("cat");
+		document.getElementById("aditi5").innerHTML="match for cat in string a : " + b.length;
+		b=a.match(/cat/g);
+		document.getElementById("aditi6").innerHTML="global match for cat in string a : " + b.length;
+		const iterator=a.matchAll("cat");
+		document.getElementById("aditi7").innerHTML="match all for cat in string a : " +  Array.from(iterator);
+		
+		b=a.includes("cat");
+		document.getElementById("aditi8").innerHTML="includes for cat in string a : " + b;
+		b=a.startsWith("I");
+		document.getElementById("aditi9").innerHTML="startsWith for I in string a : " + b;
+
+			b=a.endsWith("cat");
+		document.getElementById("aditi10").innerHTML="endsWith for cat in string a : " + b;
+
+
+
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<title>dates</title>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+
+<script>
+document.getElementById("demo").innerHTML = new Date();
+document.getElementById("demo2").innerHTML = new Date("2002","4");
+document.getElementById("demo3").innerHTML = new Date("2022-03-25");
+document.getElementById("demo4").innerHTML = new Date("2022-03-25").getFullYear();
+document.getElementById("demo5").innerHTML = new Date("2022-03-25").getMonth()+1;
+document.getElementById("demo6").innerHTML = new Date("2022-03-25").getDate();
+document.getElementById("demo7").innerHTML = new Date("2022-03-25").getSeconds();
+
+
+
+
+</script>
+
+</body>
+</html>
